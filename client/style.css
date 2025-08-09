@@ -1,0 +1,76 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Makes padding and border included in element's total width */
+}
+
+body {
+    font-family: Arial, sans-serif;  /* Sets the font for the entire page */
+    background-color: #f5f5f5;      /* Light gray background */
+    padding: 20px;                  /* Space around the entire page */
+}
+
+/* Main container styling */
+.container {
+    max-width: 600px;               /* Limits width so it doesn't get too wide on big screens */
+    margin: 0 auto;                 /* Centers the container horizontally */
+    background-color: white;        /* White background for the main content */
+    border-radius: 10px;            /* Rounded corners */
+    padding: 30px;                  /* Space inside the container */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+}
+
+/* Title styling */
+h1 {
+    color: #333;                    /* Dark gray text */
+    text-align: center;             /* Center the title */
+    margin-bottom: 30px;            /* Space below the title */
+}
+
+/* Form to add new habits */
+.add-habit-form {
+    display: flex;                  /* Puts input and button side by side */
+    gap: 10px;                      /* Space between input and button */
+    margin-bottom: 30px;            /* Space below the form */
+}
+/* Input field styling */
+#habitInput {
+    flex: 1;                        /* Takes up remaining space in the flex container */
+    padding: 12px;                  /* Space inside the input field */
+    border: 2px solid #ddd;         /* Light gray border */
+    border-radius: 5px;             /* Slightly rounded corners */
+    font-size: 16px;                /* Text size inside input */
+}
+
+#habitInput:focus {
+    border-color: #4CAF50;          /* Green border when user clicks in the input */
+    outline: none;                  /* Removes default browser outline */
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;             /* Space inside button (top/bottom, left/right) */
+    background-color: #4CAF50;      /* Green background */
+    color: white;                   /* White text */
+    border: none;                   /* No border */
+    border-radius: 5px;             /* Rounded corners */
+    cursor: pointer;                /* Shows hand cursor when hovering */
+    font-size: 16px;                /* Button text size */
+}
+
+button:hover {
+    background-color: #45a049;      /* Darker green when hovering */
+}
+
+/* Individual habit item styling */
+.habit-item {
+    display: flex;                  /* Puts habit content side by side */
+    justify-content: space-between; /* Spreads items to opposite ends */
+    align-items: center;            /* Vertically centers items */
+    padding: 15px;                  /* Space inside each habit item */
+    margin-bottom: 10px;            /* Space below each habit */
+    background-color: #f9f9f9;      /* Very light gray background */
+    border-radius: 5px;             /* Rounded corners */
+    border-left: 4px solid #4CAF50; /* Green left border accent */
+}

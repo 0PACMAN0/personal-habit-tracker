@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Habit Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Habit Tracker</h1>
+
+        <!-- Form to add new habits -->
+        <div class="add-habit-form">
+            <input type="text" id="habitInput" placeholder="Enter a new habit...">
+            <button onclick="addHabit()">Add Habit</button>
+        </div>
+
+        <!-- List of habits will appear here -->
+        <div id="habitsList">
+            <!-- Habits will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
